@@ -1,0 +1,23 @@
+modules:
+  jiraServiceManagement:portalHeader:
+    - key: rovo-in-jsm-portal
+      resource: chat-ui
+      resolver:
+        function: resolver
+  function:
+    - key: save-rovo-response
+      handler: index.saveRovoResponse
+    - key: resolver
+      handler: index.resolvers
+  webtrigger:
+    - key: rovo-to-chat-ui
+      function: save-rovo-response
+resources:
+  - key: chat-ui
+    path: src/chat-ui/dist
+app:
+  runtime:
+    name: nodejs22.x
+    memoryMB: 256
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/6cb71cc0-8fe7-4f33-8bee-99b9114d1d69
