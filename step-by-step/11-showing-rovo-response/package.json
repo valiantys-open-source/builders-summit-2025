@@ -1,0 +1,21 @@
+{
+  "name": "rovo-in-jsm-portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@forge/api": "^6.1.4",
+    "@forge/kvs": "^1.0.8",
+    "@forge/resolver": "^1.7.0"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}
