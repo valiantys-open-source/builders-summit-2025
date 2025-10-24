@@ -40,8 +40,8 @@ If no good match exists → offer “Get IT help” link.
 
 ------------------------------------------
 
-9. Go to `https://zishan-aslam.atlassian.net/rest/servicedeskapi/servicedesk/332/requesttype` but change the instance name to your name. This will give you a bunch of information. Copy all of it.
-10. Go to a empty Rovo chat with the default agent and ask it to transform that data in the link to the following shape: { name, description, link }. Use the following prompt:
+9. Go to `https://zishan-aslam.atlassian.net/rest/servicedeskapi/servicedesk` but change the instance name to your name. Find the portal `id`. That number will then be used when you go to `https://zishan-aslam.atlassian.net/rest/servicedeskapi/servicedesk/PORTALID/requesttype` but change the instance name to your name. This will give you a bunch of information. Copy all of it.
+10. Go to a empty Rovo chat with the default agent and ask it(please change the instance name to match yours):
 
 Help me transform the following data into this form: { name, description, link } where the link is transformed from each items _links.self url links in each item to look like: https://zishan-aslam.atlassian.net/servicedesk/customer/portal/1/create/10 We customize the instance name, the portal id and the request type id
 
